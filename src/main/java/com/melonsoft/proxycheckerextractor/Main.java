@@ -60,14 +60,15 @@ public class Main {
             }
         }
 
-        String resultTable = "<html><head><title>First parse</title></head><body>" + driver.findElement(By.id("resultTable")).getAttribute("innerHTML")+ "</body></html>";
+        String resultTable = "<!DOCTYPE html><html><head><title>First parse</title></head><body>" + driver.findElement(By.id("resultTable")).getAttribute("innerHTML")+ "</body></html>";
         //String resultTable = driver.findElement(By.id("resultTable")).getAttribute("innerHTML");
+        
         
         try {
         Document doc = Jsoup.parse(resultTable);  
-        Elements content = doc.getElementsByTag("body");
-        Element masthead = doc.select("body.tbody").first();
+        Elements content = doc.body().getElementsByTag("body");
         Element table = doc.select("thead").first(); //select the first table.
+        Element table1 = doc.body().getElementsByTag("tr").first(); //select the first table.
         Elements rows = table.select("tr");
 
         } catch (Exception e) {
