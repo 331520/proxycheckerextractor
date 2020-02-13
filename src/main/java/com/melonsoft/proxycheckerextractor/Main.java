@@ -5,16 +5,17 @@
  */
 package com.melonsoft.proxycheckerextractor;
 
-import com.google.common.net.HttpHeaders;
 import java.io.IOException;
-import org.apache.http.HttpEntity;
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
+import java.util.ArrayList; 
 import org.apache.log4j.Logger;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
@@ -31,57 +32,68 @@ public class Main {
         // TODO code application logic here
         logger.debug("");
         logger.debug("Start");
+        Integer webdriverwait = 10;
 
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+        //classes
+        SupportFactory sf = new SupportFactory();
+        NewWebDriver newWebDriver = new NewWebDriver();
 
-        try {
+        //create new driver
+        WebDriver driver = newWebDriver.driver();
+        WebDriverWait wait = new WebDriverWait(driver, webdriverwait);
 
-            //HttpGet request = new HttpGet("https://httpbin.org/get");
-            HttpGet request = new HttpGet("https://checkerproxy.net/archive/2020-02-11");
-            //HttpGet request = new HttpGet("http://proxydb.net/anon");
-            //HttpGet request = new HttpGet("https://google.com");
+        driver.get("https://checkerproxy.net/archive/2020-02-11");
 
-            // add request headers
-            //request.addHeader("custom-key", "mkyong");
-            request.addHeader(HttpHeaders.USER_AGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36");
+        //are list loaded to applet?
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")));
 
-            // 5 seconds timeout
-            RequestConfig requestConfig = RequestConfig.custom()
-                    .setConnectionRequestTimeout(5000)
-                    .setConnectTimeout(5000)
-                    .setSocketTimeout(5000)
-                    .build();
-
-            request.setConfig(requestConfig);
-
-            CloseableHttpResponse response = httpClient.execute(request);
-
+        for (int i = 0; i < 10; i++) {
             try {
-
-                // Get HttpResponse Status
-                System.out.println(response.getProtocolVersion());              // HTTP/1.1
-                System.out.println(response.getStatusLine().getStatusCode());   // 200
-                System.out.println(response.getStatusLine().getReasonPhrase()); // OK
-                System.out.println(response.getStatusLine().toString());        // HTTP/1.1 200 OK
-
-                HttpEntity entity = response.getEntity();
-                if (entity != null) {
-                    // return it as a String
-                    String result = EntityUtils.toString(entity);
-                    System.out.println(result);
+                String proxyCounter = driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")).getText();
+                Thread.sleep(2000);
+                logger.debug(proxyCounter + " proxies has been finded");
+                if (!proxyCounter.equals("0")) {
+                    break;
                 }
-
-            } catch (Exception e) {
-                System.out.println("==============================>/r/n" + e.getLocalizedMessage() + "/r/n <===================================");
-            } finally {
-                response.close();
+            } catch (Exception ex) {
+                System.out.println("error define proxy amount");
             }
-        } catch (Exception e) {
-            System.out.println("==============================>/r/n" + e.getLocalizedMessage() + "/r/n <===================================");
-        } finally {
-            httpClient.close();
         }
 
-    }
+        String resultTable = "<html><head><title>First parse</title></head><body>" + driver.findElement(By.id("resultTable")).getAttribute("innerHTML")+ "</body></html>";
+        //String resultTable = driver.findElement(By.id("resultTable")).getAttribute("innerHTML");
+        
+        try {
+        Document doc = Jsoup.parse(resultTable);  
+        Elements content = doc.getElementsByTag("body");
+        Element masthead = doc.select("body.tbody").first();
+        Element table = doc.select("thead").first(); //select the first table.
+        Elements rows = table.select("tr");
 
+        } catch (Exception e) {
+            System.out.println("error get jsoup document : " + e.getLocalizedMessage());
+        }
+        
+
+        driver.close();
+        driver.quit();
+
+        /*
+        HttpClient client = new DefaultHttpClient();
+        HttpGet request = new HttpGet("http://www.vogella.com");
+        //HttpGet request = new HttpGet("https://checkerproxy.net/archive/2020-02-11");
+        HttpResponse response = client.execute(request);
+
+        // Get the response
+        BufferedReader rd = new BufferedReader(new InputStreamReader(
+                response.getEntity().getContent()));
+
+        String line = "";
+        while ((line = rd.readLine()) != null) {
+            System.out.println("" + line);
+            
+        }
+        
+         */
+    }
 }

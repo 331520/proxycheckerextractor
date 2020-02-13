@@ -4067,3 +4067,1068 @@
 2020-02-11 21:36:38 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://checkerproxy.net:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
 2020-02-11 21:36:38 DEBUG PoolingHttpClientConnectionManager:409 - Connection manager is shutting down
 2020-02-11 21:36:38 DEBUG PoolingHttpClientConnectionManager:415 - Connection manager shut down
+2020-02-11 21:48:14 DEBUG Main:37 - 
+2020-02-11 21:48:14 DEBUG Main:38 - Start
+2020-02-11 21:48:15 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://www.vogella.com:80
+2020-02-11 21:48:15 DEBUG DefaultClientConnectionOperator:177 - Connecting to www.vogella.com:80
+2020-02-11 21:48:15 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2020-02-11 21:48:15 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-02-11 21:48:15 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-02-11 21:48:15 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-02-11 21:48:15 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:274 - Sending request: GET / HTTP/1.1
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "GET / HTTP/1.1[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "Host: www.vogella.com[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "[\r][\n]"
+2020-02-11 21:48:15 DEBUG headers:278 - >> GET / HTTP/1.1
+2020-02-11 21:48:15 DEBUG headers:281 - >> Host: www.vogella.com
+2020-02-11 21:48:15 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-02-11 21:48:15 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+2020-02-11 21:48:15 DEBUG wire:73 -  << "HTTP/1.1 301 Moved Permanently[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Date: Tue, 11 Feb 2020 19:48:15 GMT[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Location: https://www.vogella.com/[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Content-Length: 313[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Content-Type: text/html; charset=iso-8859-1[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\r][\n]"
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 301 Moved Permanently
+2020-02-11 21:48:15 DEBUG headers:262 - << HTTP/1.1 301 Moved Permanently
+2020-02-11 21:48:15 DEBUG headers:265 - << Date: Tue, 11 Feb 2020 19:48:15 GMT
+2020-02-11 21:48:15 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-02-11 21:48:15 DEBUG headers:265 - << Location: https://www.vogella.com/
+2020-02-11 21:48:15 DEBUG headers:265 - << Content-Length: 313
+2020-02-11 21:48:15 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-02-11 21:48:15 DEBUG headers:265 - << Connection: Keep-Alive
+2020-02-11 21:48:15 DEBUG headers:265 - << Content-Type: text/html; charset=iso-8859-1
+2020-02-11 21:48:15 DEBUG DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-11 21:48:15 DEBUG DefaultRedirectStrategy:151 - Redirect requested to location 'https://www.vogella.com/'
+2020-02-11 21:48:15 DEBUG DefaultHttpClient:1090 - Resetting target auth state
+2020-02-11 21:48:15 DEBUG DefaultHttpClient:1106 - Redirecting to 'https://www.vogella.com/' via {s}->https://www.vogella.com:443
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<html><head>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<title>301 Moved Permanently</title>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</head><body>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<h1>Moved Permanently</h1>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<p>The document has moved <a href="https://www.vogella.com/">here</a>.</p>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<hr>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<address>Apache/2.4.18 (Ubuntu) Server at www.vogella.com Port 80</address>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</body></html>[\n]"
+2020-02-11 21:48:15 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@210366b4
+2020-02-11 21:48:15 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-11 21:48:15 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://www.vogella.com:443
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:56989<->136.243.156.140:80 closed
+2020-02-11 21:48:15 DEBUG DefaultClientConnectionOperator:177 - Connecting to www.vogella.com:443
+2020-02-11 21:48:15 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2020-02-11 21:48:15 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-02-11 21:48:15 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-02-11 21:48:15 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-02-11 21:48:15 DEBUG DefaultHttpClient:677 - Attempt 2 to execute request
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:274 - Sending request: GET / HTTP/1.1
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "GET / HTTP/1.1[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "Host: www.vogella.com[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  >> "[\r][\n]"
+2020-02-11 21:48:15 DEBUG headers:278 - >> GET / HTTP/1.1
+2020-02-11 21:48:15 DEBUG headers:281 - >> Host: www.vogella.com
+2020-02-11 21:48:15 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-02-11 21:48:15 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+2020-02-11 21:48:15 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Date: Tue, 11 Feb 2020 19:48:15 GMT[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "X-Mod-Pagespeed: 1.13.35.2-0[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Cache-Control: max-age=0, no-cache, s-maxage=10[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Content-Length: 17036[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Connection: close[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "Content-Type: text/html[\r][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\r][\n]"
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-02-11 21:48:15 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-02-11 21:48:15 DEBUG headers:265 - << Date: Tue, 11 Feb 2020 19:48:15 GMT
+2020-02-11 21:48:15 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-02-11 21:48:15 DEBUG headers:265 - << Accept-Ranges: bytes
+2020-02-11 21:48:15 DEBUG headers:265 - << Vary: Accept-Encoding
+2020-02-11 21:48:15 DEBUG headers:265 - << X-Mod-Pagespeed: 1.13.35.2-0
+2020-02-11 21:48:15 DEBUG headers:265 - << Cache-Control: max-age=0, no-cache, s-maxage=10
+2020-02-11 21:48:15 DEBUG headers:265 - << Content-Length: 17036
+2020-02-11 21:48:15 DEBUG headers:265 - << Connection: close
+2020-02-11 21:48:15 DEBUG headers:265 - << Content-Type: text/html
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!DOCTYPE html>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<html lang="en">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<head>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta charset="utf-8">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<title>Eclipse, Android and Java training and support</title>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="description" content="The vogella GmbH is a German company and provides services ranging from training, consulting and mentoring in the areas of Eclipse, Android and Git.">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="keywords" content="Training, Tutorials, Exercises, Eclipse, RCP, OSGi, Android, GWT, JUnit, XML, JSF, JPA, Git">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="verify-v1" content="sE7LNm8dZTyJgkDU7KR/1Hw5klYayq9ow10fOEcUHY0=">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="robots" content="index, follow">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="author" content="Lars Vogel">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<meta name="viewport" content="width=device-width, initial-scale=1">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel='stylesheet' type='text/css'>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://www.vogella.com/css/A.navigation.css,,qv==2.7+header.css,,qv==2.0+companyfooter.css,,qv==2.0+trainingoffering.css,,qv==2.1,Mcc.LF7CQ-TyiB.css.pagespeed.cf.cKG51uczqs.css" rel="stylesheet" type="text/css"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link rel="shortcut icon" href="https://www.vogella.com/favicon.ico">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/EclipseAndJava">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="vogella"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<link rel="copyright" href="//creativecommons.org/licenses/by-nc-sa/3.0/de/">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript">window.cookieconsent_options={"message":"We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners. By using this site you agree to our cookie use.","dismiss":"Got it!","learnMore":"See details","link":"https://www.vogella.com/privacy.html","theme":"dark-bottom"};</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!-- End Cookie Consent plugin -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!-- Google Analytics -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-3967758-1']);_gaq.push(['_setDomainName','vogella.com']);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_trackPageview']);_gaq.push(['_gat._anonymizeIp']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<script>function openCloseNav(){if(document.getElementById("mobileTopnav").style.width==="150px"){document.getElementById("mobileTopnav").style.width="0";document.body.style.marginLeft="8px";}else{document.getElementById("mobileTopnav").style.width="150px";document.body.style.marginLeft="160px";}}</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</head>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<body>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="mobileHeaderpart">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    <span onclick="openCloseNav()"><img src="https://www.vogella.com/img/icons/burger.svg" alt=""/> </span>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    <div id="mobileLogo">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <a title="vogella.com" href="http://www.vogella.com">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <img src="https://www.vogella.com/img/logo/index_logo.svg" alt="vogella.com"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    </div> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<nav id="mobileTopnav" class="sidenav">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    <a class="currentpage" href="https://www.vogella.com/">Home</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/tutorials/">Tutorials</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/training/">Training</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    <a href="https://www.vogella.com/consulting/">Consulting</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/company/">Company</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<a style="margin-bottom:60px" href="https://www.vogella.com/contact.html">Contact us</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</nav>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="headerpart">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div id="logo">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<a title="vogella.com" href="http://www.vogella.com">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<img src="https://www.vogella.com/img/logo/xindex_logo.png.pagespeed.ic.MsfY6nLwK9.png" alt="vogella.com"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<nav id="topnav">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<ul id="home" class="topnav">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li id="home-icon" class="currentpage"><a href="https://www.vogella.com/"></a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li> <a href="https://www.vogella.com/tutorials/">Tutorials</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipseide.html">Eclipse IDE</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipse.html">Eclipse RCP</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipseplatform.html">Eclipse IDE Extensions</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/android.html">Android Programming</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/web.html">Web</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/java.html">Java</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/technology.html">Technology</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/algorithms.html">Software design</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/code/index.html">Source Code</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/">Training</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/eclipse/eclipsercp.html">Eclipse RCP Training</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/appdevelopment/flutter.html">Cross Mobile App Dev. Training</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/git/index.html">Git Version Control Training</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://learn.vogella.com/">Self-study Portal</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/onsite/index.html">Other Onsite Training</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/consulting/">Consulting</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/company/">Company</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/jobs/">Jobs</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/people/index.html">People</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/customers.html" onclick="_gaq.push(['_trackEvent', 'Customers', 'clicked', 'Header']);">Customers</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="http://blog.vogella.com/">Blog</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/">Books</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipsercp.html">Eclipse RCP</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipseide.html">Eclipse IDE</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipsecontribution.html">Contributing to the Eclipse Project</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/git.html">Git</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/research.html">Research Projects</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/support.html">Donate</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/contact.html">Contact us</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</nav>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div id="searchfixed">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<form action="https://www.vogella.com/search.html" id="cse-search-box">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div id="searchwrapper">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<script>(function(){var cx='partner-pub-3851443674951530:3991491935';var gcse=document.createElement('script');gcse.type='text/javascript';gcse.async=true;gcse.src='https://cse.google.com/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<gcse:searchbox-only></gcse:searchbox-only>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</form>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="container_new">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="leftcol">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!-- Empty -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div> <!-- leftcolumn -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div class="content-wrapper">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div class="section_black">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_dark_background" href="https://www.vogella.com/company/"> vogella</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_white">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]We provide <a class="important_links" href="https://learn.vogella.com/">commercial online training</a>,[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="important_links" href="https://www.vogella.com/training/onsite/index.html">onsite training</a> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]and [\n]"
+2020-02-11 21:48:15 DEBUG wire:87 -  << "[0x9][0x9][0x9]<a class="i"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "mportant_links" href="https://www.vogella.com/consulting/">consulting</a>.[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]We also publish lots of free [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="important_links" href="https://www.vogella.com/tutorials/">tutorials</a>. [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div> <!-- description_white -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="small_img">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<a href="https://www.vogella.com/company/">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<img src="img/logo/xlogo_very_rough_left_white.png.pagespeed.ic.h2G-1xsDr4.png" alt="vogella">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div> <!--small_img-->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div> <!-- section_black --> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div class="section_gray">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="big_img">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/training/">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<img src="img/main_page/xlearningportaldevices.png.pagespeed.ic.0nSiU623xP.png" alt="LearningPortal">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side_center -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/training/"> Training and education</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_black">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]Learn directly from our experts [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]via our <a class="important_links" href="https://learn.vogella.com/">commercial online training</a> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]or <a class="important_links" href="https://www.vogella.com/training/onsite/index.html">directly from our employees</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]in the areas of <a class="important_links" href="https://learn.vogella.com/courses/details/rich-client-platform">Eclipse RCP</a>, Git, Java and mobile development.[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div> <!--section_gray-->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div class="section_white">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a href="https://www.vogella.com/tutorials/">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<img src="img/main_page/xkeywords.png.pagespeed.ic.0eUCXEpab9.png" alt="Tutorials">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9] [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/tutorials/"> Tutorials</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_black">Read our free online tutorials in the areas of Eclipse, RCP, Git, Java, Dart, Flutter and Web development and others.</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div> <!-- section_white -->[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div class="section_gray_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="twothird_side_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/customers.html">Customer quotes</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div id="quotes"> </div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div class="third_side_center">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9][0x9]<img class="customer-quote-img" src="img/main_page/xbook_eyes.jpg.pagespeed.ic.-8ykHYyLt8.jpg" alt="Customers Quotes">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div> <!-- content wrapper -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="rightcol">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!--[0x9]<div id="banner2">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div id="banner-triangle2"> </div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<div id="banner-text2"> NOW <br> Hiring </div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]</div>-->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div> <!-- rightcol -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!-- Load jQuery and idTabs -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript" src="https://www.vogella.com/javascript/jquery/jquery.js.pagespeed.jm.zp18PNbMUR.js"></script> <!-- please change the src according to your folder strucutre and where jquery files will be on vogella.de -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript" src="https://www.vogella.com/javascript/jquery/jquery_tabs.js.pagespeed.jm.WilCta_dWl.js"></script> <!-- please change the src according to your folder strucutre and where jquery files will be on vogella.de -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript">var fade=function(id,s){s.tabs.removeClass(s.selected);s.tab(id).addClass(s.selected);s.items.hide();s.item(id).show();return false;};$.fn.fadeTabs=$.idTabs.extend(fade);$(".menu").fadeTabs();</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<!--[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script type="text/javascript">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "$(document).ready(function() {[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    // change the active tab after the site is loaded[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   $('ul li a[href$="agenda"]').removeClass('selected');[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   $('#agenda').hide();[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   $('ul li a[href$="angebot"]').addClass('selected');[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   $('#angebot').show();[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "   [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "});[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</script>-->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script src="training/quotes/vogella,_content-quotes.js+quotes.js.pagespeed.jc.2Woyob0CVd.js"></script><script>eval(mod_pagespeed_sCzg6JRVLh);</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<script>eval(mod_pagespeed_7UyxIqWGqF);</script>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "<div id="companyfooter">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9]<div class="footerrow">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/company/">vogella Company</a></h2>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/customers.html" onclick="_gaq.push(['_trackEvent', 'Customers', 'clicked', 'Companyfooter']);">Customers</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="http://blog.vogella.com/">Blog</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/jobs/">Jobs</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/support.html">Donate for free tutorials</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/legal.html" rel="nofollow">Legal</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/privacy.html" rel="nofollow">Privacy Policy</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/faq.html">FAQ</a></li>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </ul>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    </div><!-- footerrow -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    <div class="footerrow" id="contact_en">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/contact.html?lang=en">Contact us</a></h2>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <a href="https://contact.vogella.com/request?lang=en" class="darker_link">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [0x9]<img alt="Email" src="https://www.vogella.com/img/icons/contact_form.svg" title="Email" style="width:20px"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [0x9]Contact form[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <br>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <a href="mailto:sales@vogella.com" class="darker_link">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [0x9]<img alt="Email" src="https://www.vogella.com/img/icons/email_gray.svg" title="Email" style="width:20px"/>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [0x9]sales@vogella.com[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <br>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]<a href="tel:+49 40 7880 4360" class="darker_link">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <img alt="Call" src="https://www.vogella.com/img/icons/call_gray.svg" title="Call" style="width:20px"/> [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        +49 40 7880 4360[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[0x9][0x9]</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        [\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <div id="social-icons">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="http://twitter.com/vogellacompany">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xtwitter_small.png.pagespeed.ic.zUCU7IAJvb.png" alt="Follow us on twitter" width="32" height="32" pagespeed_url_hash="4214849013" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.facebook.com/pages/Vogella/291986214230897">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xfacebook_small.png.pagespeed.ic.Nr2jwQhmhQ.png" alt="Follow us on facebook" width="32" height="32" pagespeed_url_hash="2074413958" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.linkedin.com/company/vogella-gmbh">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xlinkedin_small.png.pagespeed.ic.UsWjy4yMQ0.png" alt="Follow us on Linkedin" width="32" height="32" pagespeed_url_hash="110228678" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.xing.com/companies/vogellagmbh">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xxing_small.png.pagespeed.ic.svLIPwqYUL.png" alt="Follow us on xing" width="32" height="32" pagespeed_url_hash="2568152418" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://github.com/vogellacompany">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xgithub_small.png.pagespeed.ic.cZ9ygI4rWa.png" alt="vogella Github" width="32" height="32" pagespeed_url_hash="2344544139" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </div> <!-- social-icons -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << " [0x9]</div> <!-- footerrow -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << " [0x9][\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << " [0x9]<div class="footerrow">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/training/">Training</a></h2>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "         <div class="footer_event">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <a href="https://learn.vogella.com">OT</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://learn.vogella.com">Online training</a><br>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <div class="footer_event">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <a href="https://www.vogella.com/training/appdevelopment/flutter.html">20 FEB</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:87 -  << "            <a href="https://www.vogella.com/training/appdevelopment/flutter.html">Cross mobile dev.</"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "a><br>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/appdevelopment/flutter.html">(2 days)</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        <div class="footer_event">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "                <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">04 MAI</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">Eclipse RCP dev.</a><br>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">(5 days)</a>[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "    </div><!-- footerrow -->[\n]"
+2020-02-11 21:48:15 DEBUG wire:73 -  << "</div> <!-- companyfooter --></body>[\n]"
+2020-02-11 21:48:15 DEBUG wire:87 -  << "</html>"
+2020-02-11 21:48:15 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4206a205
+2020-02-11 21:48:15 DEBUG DefaultClientConnection:164 - Connection 0.0.0.0:56990<->136.243.156.140:443 shut down
+2020-02-11 21:48:58 DEBUG Main:37 - 
+2020-02-11 21:48:58 DEBUG Main:38 - Start
+2020-02-11 21:48:59 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://checkerproxy.net:443
+2020-02-11 21:48:59 DEBUG DefaultClientConnectionOperator:177 - Connecting to checkerproxy.net:443
+2020-02-11 21:48:59 DEBUG DefaultClientConnection:180 - Connection org.apache.http.impl.conn.DefaultClientConnection@12c8a2c0 closed
+2020-02-11 21:48:59 DEBUG DefaultClientConnection:164 - Connection org.apache.http.impl.conn.DefaultClientConnection@12c8a2c0 shut down
+2020-02-11 21:48:59 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@365185bd
+2020-02-11 21:49:47 DEBUG Main:37 - 
+2020-02-11 21:49:47 DEBUG Main:38 - Start
+2020-02-11 21:49:48 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://www.vogella.com:80
+2020-02-11 21:49:48 DEBUG DefaultClientConnectionOperator:177 - Connecting to www.vogella.com:80
+2020-02-11 21:49:49 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2020-02-11 21:49:49 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-02-11 21:49:49 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-02-11 21:49:49 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2020-02-11 21:49:49 DEBUG DefaultClientConnection:274 - Sending request: GET / HTTP/1.1
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "GET / HTTP/1.1[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "Host: www.vogella.com[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "[\r][\n]"
+2020-02-11 21:49:49 DEBUG headers:278 - >> GET / HTTP/1.1
+2020-02-11 21:49:49 DEBUG headers:281 - >> Host: www.vogella.com
+2020-02-11 21:49:49 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-02-11 21:49:49 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+2020-02-11 21:49:49 DEBUG wire:73 -  << "HTTP/1.1 301 Moved Permanently[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Date: Tue, 11 Feb 2020 19:49:49 GMT[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Location: https://www.vogella.com/[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Content-Length: 313[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Content-Type: text/html; charset=iso-8859-1[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\r][\n]"
+2020-02-11 21:49:49 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 301 Moved Permanently
+2020-02-11 21:49:49 DEBUG headers:262 - << HTTP/1.1 301 Moved Permanently
+2020-02-11 21:49:49 DEBUG headers:265 - << Date: Tue, 11 Feb 2020 19:49:49 GMT
+2020-02-11 21:49:49 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-02-11 21:49:49 DEBUG headers:265 - << Location: https://www.vogella.com/
+2020-02-11 21:49:49 DEBUG headers:265 - << Content-Length: 313
+2020-02-11 21:49:49 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-02-11 21:49:49 DEBUG headers:265 - << Connection: Keep-Alive
+2020-02-11 21:49:49 DEBUG headers:265 - << Content-Type: text/html; charset=iso-8859-1
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-11 21:49:49 DEBUG DefaultRedirectStrategy:151 - Redirect requested to location 'https://www.vogella.com/'
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:1090 - Resetting target auth state
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:1106 - Redirecting to 'https://www.vogella.com/' via {s}->https://www.vogella.com:443
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<html><head>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<title>301 Moved Permanently</title>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</head><body>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<h1>Moved Permanently</h1>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<p>The document has moved <a href="https://www.vogella.com/">here</a>.</p>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<hr>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<address>Apache/2.4.18 (Ubuntu) Server at www.vogella.com Port 80</address>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</body></html>[\n]"
+2020-02-11 21:49:49 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@210366b4
+2020-02-11 21:49:49 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-11 21:49:49 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://www.vogella.com:443
+2020-02-11 21:49:49 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:57012<->136.243.156.140:80 closed
+2020-02-11 21:49:49 DEBUG DefaultClientConnectionOperator:177 - Connecting to www.vogella.com:443
+2020-02-11 21:49:49 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2020-02-11 21:49:49 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-02-11 21:49:49 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-02-11 21:49:49 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:677 - Attempt 2 to execute request
+2020-02-11 21:49:49 DEBUG DefaultClientConnection:274 - Sending request: GET / HTTP/1.1
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "GET / HTTP/1.1[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "Host: www.vogella.com[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  >> "[\r][\n]"
+2020-02-11 21:49:49 DEBUG headers:278 - >> GET / HTTP/1.1
+2020-02-11 21:49:49 DEBUG headers:281 - >> Host: www.vogella.com
+2020-02-11 21:49:49 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-02-11 21:49:49 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_191)
+2020-02-11 21:49:49 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Date: Tue, 11 Feb 2020 19:49:49 GMT[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "X-Mod-Pagespeed: 1.13.35.2-0[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Cache-Control: max-age=0, no-cache, s-maxage=10[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Content-Length: 17036[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "Content-Type: text/html[\r][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\r][\n]"
+2020-02-11 21:49:49 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-02-11 21:49:49 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-02-11 21:49:49 DEBUG headers:265 - << Date: Tue, 11 Feb 2020 19:49:49 GMT
+2020-02-11 21:49:49 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-02-11 21:49:49 DEBUG headers:265 - << Accept-Ranges: bytes
+2020-02-11 21:49:49 DEBUG headers:265 - << Vary: Accept-Encoding
+2020-02-11 21:49:49 DEBUG headers:265 - << X-Mod-Pagespeed: 1.13.35.2-0
+2020-02-11 21:49:49 DEBUG headers:265 - << Cache-Control: max-age=0, no-cache, s-maxage=10
+2020-02-11 21:49:49 DEBUG headers:265 - << Content-Length: 17036
+2020-02-11 21:49:49 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-02-11 21:49:49 DEBUG headers:265 - << Connection: Keep-Alive
+2020-02-11 21:49:49 DEBUG headers:265 - << Content-Type: text/html
+2020-02-11 21:49:49 DEBUG DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!DOCTYPE html>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<html lang="en">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<head>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta charset="utf-8">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<title>Eclipse, Android and Java training and support</title>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="description" content="The vogella GmbH is a German company and provides services ranging from training, consulting and mentoring in the areas of Eclipse, Android and Git.">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="keywords" content="Training, Tutorials, Exercises, Eclipse, RCP, OSGi, Android, GWT, JUnit, XML, JSF, JPA, Git">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="verify-v1" content="sE7LNm8dZTyJgkDU7KR/1Hw5klYayq9ow10fOEcUHY0=">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="robots" content="index, follow">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="author" content="Lars Vogel">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<meta name="viewport" content="width=device-width, initial-scale=1">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel='stylesheet' type='text/css'>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://www.vogella.com/css/A.navigation.css,,qv==2.7+header.css,,qv==2.0+companyfooter.css,,qv==2.0+trainingoffering.css,,qv==2.1,Mcc.LF7CQ-TyiB.css.pagespeed.cf.cKG51uczqs.css" rel="stylesheet" type="text/css"/>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link rel="shortcut icon" href="https://www.vogella.com/favicon.ico">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/EclipseAndJava">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="vogella"/>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<link rel="copyright" href="//creativecommons.org/licenses/by-nc-sa/3.0/de/">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<script type="text/javascript">window.cookieconsent_options={"message":"We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners. By using this site you agree to our cookie use.","dismiss":"Got it!","learnMore":"See details","link":"https://www.vogella.com/privacy.html","theme":"dark-bottom"};</script>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!-- End Cookie Consent plugin -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!-- Google Analytics -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-3967758-1']);_gaq.push(['_setDomainName','vogella.com']);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_trackPageview']);_gaq.push(['_gat._anonymizeIp']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<script>function openCloseNav(){if(document.getElementById("mobileTopnav").style.width==="150px"){document.getElementById("mobileTopnav").style.width="0";document.body.style.marginLeft="8px";}else{document.getElementById("mobileTopnav").style.width="150px";document.body.style.marginLeft="160px";}}</script>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</head>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<body>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div id="mobileHeaderpart">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "    <span onclick="openCloseNav()"><img src="https://www.vogella.com/img/icons/burger.svg" alt=""/> </span>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "    <div id="mobileLogo">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "        <a title="vogella.com" href="http://www.vogella.com">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "            <img src="https://www.vogella.com/img/logo/index_logo.svg" alt="vogella.com"/>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "    </div> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<nav id="mobileTopnav" class="sidenav">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "    <a class="currentpage" href="https://www.vogella.com/">Home</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/tutorials/">Tutorials</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/training/">Training</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "    <a href="https://www.vogella.com/consulting/">Consulting</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<a href="https://www.vogella.com/company/">Company</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<a style="margin-bottom:60px" href="https://www.vogella.com/contact.html">Contact us</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</nav>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div id="headerpart">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div id="logo">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<a title="vogella.com" href="http://www.vogella.com">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<img src="https://www.vogella.com/img/logo/xindex_logo.png.pagespeed.ic.MsfY6nLwK9.png" alt="vogella.com"/>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<nav id="topnav">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<ul id="home" class="topnav">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li id="home-icon" class="currentpage"><a href="https://www.vogella.com/"></a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li> <a href="https://www.vogella.com/tutorials/">Tutorials</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipseide.html">Eclipse IDE</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipse.html">Eclipse RCP</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/eclipseplatform.html">Eclipse IDE Extensions</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/android.html">Android Programming</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/web.html">Web</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/java.html">Java</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/technology.html">Technology</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/tutorials/algorithms.html">Software design</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/code/index.html">Source Code</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/">Training</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/eclipse/eclipsercp.html">Eclipse RCP Training</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/appdevelopment/flutter.html">Cross Mobile App Dev. Training</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/git/index.html">Git Version Control Training</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://learn.vogella.com/">Self-study Portal</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/training/onsite/index.html">Other Onsite Training</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/consulting/">Consulting</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/company/">Company</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/jobs/">Jobs</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/people/index.html">People</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/customers.html" onclick="_gaq.push(['_trackEvent', 'Customers', 'clicked', 'Header']);">Customers</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="http://blog.vogella.com/">Blog</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/">Books</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9]<ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipsercp.html">Eclipse RCP</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipseide.html">Eclipse IDE</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/eclipsecontribution.html">Contributing to the Eclipse Project</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/books/git.html">Git</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/research.html">Research Projects</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<li><a href="https://www.vogella.com/support.html">Donate</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<li><a href="https://www.vogella.com/contact.html">Contact us</a></li>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</ul>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</nav>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div id="searchfixed">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<form action="https://www.vogella.com/search.html" id="cse-search-box">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div id="searchwrapper">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<script>(function(){var cx='partner-pub-3851443674951530:3991491935';var gcse=document.createElement('script');gcse.type='text/javascript';gcse.async=true;gcse.src='https://cse.google.com/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<gcse:searchbox-only></gcse:searchbox-only>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</form>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div id="container_new">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div id="leftcol">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!-- Empty -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</div> <!-- leftcolumn -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div class="content-wrapper">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div class="section_black">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_dark_background" href="https://www.vogella.com/company/"> vogella</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_white">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]We provide <a class="important_links" href="https://learn.vogella.com/">commercial online training</a>,[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="important_links" href="https://www.vogella.com/training/onsite/index.html">onsite training</a> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]and [\n]"
+2020-02-11 21:49:49 DEBUG wire:87 -  << "[0x9][0x9][0x9]<a class="i"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "mportant_links" href="https://www.vogella.com/consulting/">consulting</a>.[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]We also publish lots of free [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="important_links" href="https://www.vogella.com/tutorials/">tutorials</a>. [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div> <!-- description_white -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="small_img">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<a href="https://www.vogella.com/company/">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<img src="img/logo/xlogo_very_rough_left_white.png.pagespeed.ic.h2G-1xsDr4.png" alt="vogella">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div> <!--small_img-->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div> <!-- section_black --> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div class="section_gray">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="big_img">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/training/">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9][0x9]<img src="img/main_page/xlearningportaldevices.png.pagespeed.ic.0nSiU623xP.png" alt="LearningPortal">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side_center -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/training/"> Training and education</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_black">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]Learn directly from our experts [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]via our <a class="important_links" href="https://learn.vogella.com/">commercial online training</a> [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]or <a class="important_links" href="https://www.vogella.com/training/onsite/index.html">directly from our employees</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]in the areas of <a class="important_links" href="https://learn.vogella.com/courses/details/rich-client-platform">Eclipse RCP</a>, Git, Java and mobile development.[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div> <!--section_gray-->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div class="section_white">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a href="https://www.vogella.com/tutorials/">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9][0x9]<img src="img/main_page/xkeywords.png.pagespeed.ic.0eUCXEpab9.png" alt="Tutorials">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9] [\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="half_side">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/tutorials/"> Tutorials</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div class="description_black">Read our free online tutorials in the areas of Eclipse, RCP, Git, Java, Dart, Flutter and Web development and others.</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div> <!-- half_side -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div> <!-- section_white -->[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]<div class="section_gray_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="twothird_side_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<a class="header_light_background" href="https://www.vogella.com/customers.html">Customer quotes</a>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<div id="quotes"> </div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div class="third_side_center">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9][0x9]<img class="customer-quote-img" src="img/main_page/xbook_eyes.jpg.pagespeed.ic.-8ykHYyLt8.jpg" alt="Customers Quotes">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "</div> <!-- content wrapper -->[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<div id="rightcol">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "<!--[0x9]<div id="banner2">[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div id="banner-triangle2"> </div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9][0x9]<div id="banner-text2"> NOW <br> Hiring </div>[\n]"
+2020-02-11 21:49:49 DEBUG wire:73 -  << "[0x9]</div>-->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "</div> <!-- rightcol -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "</div>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<!-- Load jQuery and idTabs -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script type="text/javascript" src="https://www.vogella.com/javascript/jquery/jquery.js.pagespeed.jm.zp18PNbMUR.js"></script> <!-- please change the src according to your folder strucutre and where jquery files will be on vogella.de -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script type="text/javascript" src="https://www.vogella.com/javascript/jquery/jquery_tabs.js.pagespeed.jm.WilCta_dWl.js"></script> <!-- please change the src according to your folder strucutre and where jquery files will be on vogella.de -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script type="text/javascript">var fade=function(id,s){s.tabs.removeClass(s.selected);s.tab(id).addClass(s.selected);s.items.hide();s.item(id).show();return false;};$.fn.fadeTabs=$.idTabs.extend(fade);$(".menu").fadeTabs();</script>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<!--[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script type="text/javascript">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "$(document).ready(function() {[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "    // change the active tab after the site is loaded[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   $('ul li a[href$="agenda"]').removeClass('selected');[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   $('#agenda').hide();[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   [\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   $('ul li a[href$="angebot"]').addClass('selected');[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   $('#angebot').show();[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "   [\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "});[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "</script>-->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script src="training/quotes/vogella,_content-quotes.js+quotes.js.pagespeed.jc.2Woyob0CVd.js"></script><script>eval(mod_pagespeed_sCzg6JRVLh);</script>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<script>eval(mod_pagespeed_7UyxIqWGqF);</script>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "<div id="companyfooter">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[0x9]<div class="footerrow">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/company/">vogella Company</a></h2>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <ul>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/customers.html" onclick="_gaq.push(['_trackEvent', 'Customers', 'clicked', 'Companyfooter']);">Customers</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="http://blog.vogella.com/">Blog</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/jobs/">Jobs</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/support.html">Donate for free tutorials</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/legal.html" rel="nofollow">Legal</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/privacy.html" rel="nofollow">Privacy Policy</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <li><a href="https://www.vogella.com/faq.html">FAQ</a></li>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </ul>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "    </div><!-- footerrow -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "    <div class="footerrow" id="contact_en">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/contact.html?lang=en">Contact us</a></h2>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <a href="https://contact.vogella.com/request?lang=en" class="darker_link">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [0x9]<img alt="Email" src="https://www.vogella.com/img/icons/contact_form.svg" title="Email" style="width:20px"/>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [0x9]Contact form[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <br>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <a href="mailto:sales@vogella.com" class="darker_link">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [0x9]<img alt="Email" src="https://www.vogella.com/img/icons/email_gray.svg" title="Email" style="width:20px"/>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [0x9]sales@vogella.com[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <br>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[0x9][0x9]<a href="tel:+49 40 7880 4360" class="darker_link">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <img alt="Call" src="https://www.vogella.com/img/icons/call_gray.svg" title="Call" style="width:20px"/> [\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        +49 40 7880 4360[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[0x9][0x9]</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        [\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <div id="social-icons">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="http://twitter.com/vogellacompany">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xtwitter_small.png.pagespeed.ic.zUCU7IAJvb.png" alt="Follow us on twitter" width="32" height="32" pagespeed_url_hash="4214849013" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.facebook.com/pages/Vogella/291986214230897">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xfacebook_small.png.pagespeed.ic.Nr2jwQhmhQ.png" alt="Follow us on facebook" width="32" height="32" pagespeed_url_hash="2074413958" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.linkedin.com/company/vogella-gmbh">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xlinkedin_small.png.pagespeed.ic.UsWjy4yMQ0.png" alt="Follow us on Linkedin" width="32" height="32" pagespeed_url_hash="110228678" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.xing.com/companies/vogellagmbh">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xxing_small.png.pagespeed.ic.svLIPwqYUL.png" alt="Follow us on xing" width="32" height="32" pagespeed_url_hash="2568152418" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://github.com/vogellacompany">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <img src="https://www.vogella.com/img/common/32x32xgithub_small.png.pagespeed.ic.cZ9ygI4rWa.png" alt="vogella Github" width="32" height="32" pagespeed_url_hash="2344544139" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </div> <!-- social-icons -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << " [0x9]</div> <!-- footerrow -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << " [0x9][\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << " [0x9]<div class="footerrow">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <h2><a href="https://www.vogella.com/training/">Training</a></h2>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "         <div class="footer_event">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <a href="https://learn.vogella.com">OT</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://learn.vogella.com">Online training</a><br>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <div class="footer_event">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <a href="https://www.vogella.com/training/appdevelopment/flutter.html">20 FEB</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:87 -  << "            <a href="https://www.vogella.com/training/appdevelopment/flutter.html">Cross mobile dev.</"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "a><br>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/appdevelopment/flutter.html">(2 days)</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        <div class="footer_event">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <div class="date_display">[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "                <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">04 MAI</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            </div><!-- date_display -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">Eclipse RCP dev.</a><br>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "            <a href="https://www.vogella.com/training/eclipse/eclipsercp.html">(5 days)</a>[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "        </div><!-- footer_event -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "    </div><!-- footerrow -->[\n]"
+2020-02-11 21:49:50 DEBUG wire:73 -  << "</div> <!-- companyfooter --></body>[\n]"
+2020-02-11 21:49:50 DEBUG wire:87 -  << "</html>"
+2020-02-11 21:49:50 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4206a205
+2020-02-11 21:49:50 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-02-13 20:12:32 DEBUG Main:32 - 
+2020-02-13 20:12:32 DEBUG Main:33 - Start
+2020-02-13 20:12:32 DEBUG Main:24 - Try to create driver
+2020-02-13 20:12:34 DEBUG RequestAddCookies:123 - CookieSpec selected: standard
+2020-02-13 20:12:34 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-02-13 20:12:34 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-02-13 20:12:34 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-02-13 20:12:34 DEBUG MainClientExec:234 - Opening connection {s}->https://raw.githubusercontent.com:443
+2020-02-13 20:12:34 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to raw.githubusercontent.com/151.101.0.133:443
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:366 - Connecting socket to raw.githubusercontent.com/151.101.0.133:443 with timeout 0
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:435 - Starting handshake
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:465 - Secure session established
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:466 -  negotiated protocol: TLSv1.2
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:475 -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:484 -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+2020-02-13 20:12:34 DEBUG SSLConnectionSocketFactory:488 -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+2020-02-13 20:12:34 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.2.64:55954<->151.101.0.133:443
+2020-02-13 20:12:34 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30000
+2020-02-13 20:12:34 DEBUG MainClientExec:255 - Executing request GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+2020-02-13 20:12:34 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2020-02-13 20:12:34 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2020-02-13 20:12:34 DEBUG headers:133 - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+2020-02-13 20:12:34 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Mozilla/5.0
+2020-02-13 20:12:34 DEBUG headers:136 - http-outgoing-0 >> Connection: keep-alive
+2020-02-13 20:12:34 DEBUG headers:136 - http-outgoing-0 >> Host: raw.githubusercontent.com
+2020-02-13 20:12:34 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Mozilla/5.0[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"c674c79102971d02add783e93241a87d2665272995cb84ebb562227f7ea725ec"[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Geo-Block-List:[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-GitHub-Request-Id: 13D2:29D1:51EC8:6A199:5E458FFF[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 694[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 13 Feb 2020 18:12:34 GMT[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Served-By: cache-vie21649-VIE[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Cache: MISS[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Cache-Hits: 0[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Timer: S1581617555.769111,VS0,VE98[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Vary: Authorization,Accept-Encoding[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "X-Fastly-Request-ID: d6497bf6f8a0b89536bbc4a65b299531834794f2[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Expires: Thu, 13 Feb 2020 18:17:34 GMT[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "Source-Age: 272[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0x95][0xcb][0xae][0xdb] [0x10]@[0xf7][0xf9][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "[0xa4][0xbb]i[0x17][0xc1][0xbc][0xc1][0x91][0xd8][0xf4][0xb9][0xaa][0xba]h[0xc0]IHb][0xc7]D[0xd8][0xb9]i[0xfb][0xf5][0xe5][0xe9]r[0xad]V[0xea][0xf2][0x1c][0xc3]0b[0x98][0xf1][0x13][0xf8]~[0xe9]'p[0xea][0x7][0x3][0xe]v[0x9c][0xbb]~[0x9c][0xc0]|1[0xe0]y[0xb4][0x8f][0x11][0xbc][0x18]7[0xf5][0xd6][0xab][0x93]u[0xe0][0xe8][0xfa][0xc0][0xe0][0xcd][0xbe][0x1f];[0xf7][0xf3][0xad][0xdf]p[0xbd]us[0xbf][0xf7]{[0x1f][0xfd]|[0x89][0xfb][0xe][0xd6]93[0xdd][0xec]x[0xec][0xc7]3[0xd8];[0xfb][0x98][0x8c]+q6[0x9b]'[0xf0].[0xa9][0x1d][0xf8]l[0xed][0xd9][0xef]|q[0xf6]j[0xc0][0x16]|[0x88][0xe1]w[0xe0][0x10]E:[0xcc][0xaf][0xff]f[0xef][0xee]`v[0xe0]2[0xcf][0xb7]][0xd3][0xd4]_a[0x84][0xfe]~[0x85][0xd6][0x9d][0x9b][0xa3]Ox[0xb0][0xdd]q[0xda][0xa4]5[\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "i[0x85] [0x82][0xb4]U[0x12]b[0x91][0xad]l[0xb5]l[0xa3]e[0x1c][0xd2][0xc5]*-U[0xb4][0x88]A[0x8c]x[0xd1]RK[0x19][0xb4][0x12][0x1c]2T[0xac][0xd0]RD[0x8b]Z[0x88][0xc9][0x12][0x83]k[0xc9][0x83][0x96][0x12]A[0xfc]g5[0xd3][0x92]EMZ[0xb8][0xac][0xa5]Z[0xd2] [0x85][0xa2]P[0xa8]b[0x89]&[0x90]-k[0xf0]+B[0x81]Jb[0xa2][\r][0xc4][\n]"
+2020-02-13 20:12:34 DEBUG wire:73 - http-outgoing-0 << "[0xa9]@[0xa4][0x90][0xc][0x84][0xb][0x89]@%[0x19][0xc1]=[0xd1]r[0x9e]`[0x81]d![0x1a][0xa8][0x9c]'B.t9/[0xe4]B[0x97][0xf3]B.[0x94][0xbe][0xaa][0xe6][0x17][0xfb][0xab][0x1f][0x86][0xe]|[0xea][0x9d]9[0xd9][0x1f]U=[0xcf][0xe6][0xf0]l[0xff]Z[0xce][0xc9][0xd7][0xf3][0xec][0x1f][0xce]}[0xf][0xfd]Sj[0xae])DSmh[0x9c][0x19]L7[0x99]isJq[0xfd][0x15]!H[0xfc][0xed]/[0x2][0xaf][0x5]Z[0x9]W+[0xa1][0x82][0xe0][0x95][0x90]A[0xb0]J[0x88][0xb5][0xe0]k[0xc1][0x82][0xa0][0x95][0xa0]k[0x11]3%[0x95][0x88][0x99][0xe2]J[0xa0][0x95][0xe0][0xed]Z[0xa8][0xb5][0x90]k[0x11]3E[0x95][0xe0]E[0xd4][0xd5][0xf9]z3[0xae][0xab]jb[0x3][0xff]OM[0xe2][0xc2][0xc9][0x9e][0xe6]G[0xe7]L[0xa2][0xd2]t[0xeb][\n]"
+2020-02-13 20:12:34 DEBUG wire:87 - http-outgoing-0 << "[0xc5][0x8f][0xfe][0xe6][0xfe][0xb4][0x97]l[0xb3][0xe4]Uw)[0x99]%[0xab]z[0xb][0x13][0x94]-[0xad]{[0x8b][0x92]lI[0xdd]Z[0xa8][0xac][0xcd]-[0x11][0x81][0xb7]5[0xe4][0x86]H[0x90][0xfb]!An[0x87][0x4][0xb9][0x1b][0x12][0xe4]fH[0x90]{!An[0x85][0x4]8[0xbd][0xfd][0x4][0xa8][0x2][0x16]2([0x19][0xb3][0x90][0x1][0xcd][0xe7][0xb0][0x90][0x1][0xc9][0x97][0xc1]D[0x82]W[0xcd][0xd3][0x1f][0x9c][\r][0xb7][0xc]>[0x1e][0xcf][0xf5],[0xbc]N[0xc6][0x8b][0x16][0xea]h^[0xcc][0x10][0xa2][0xc2]k[0x89][0x10][0xab]f[0xc6][0xed]}j[0x16][0xb7][\r]A[0x9a][0xd9][0xda]aj[0x1e]f[0x9f][0xb][0xb7][0x9]Va[0xad][0xfc]s[0xf2][0xf7]# M[0xa6][0x8c]M[0x81]!GQ-3[0x13][0x87][0xf7][0x1d]M[0x9e][0x97]$[0x94]0[0x99]<*[0x9]]L[0x1e][0x93]X-[0xbb][0xf2][0x84][0xc4][0xb4][0xf5]O4*[0xc6][0xf4][0xcd][0x99][0xad][0xff][0xeb][0xcc][0xdd]0[0x98]c[0x92]D[0xb][0x88]%[0xf6][0x3]'"[0xd6][0xfe][0x85][0x8][0xd2][0xb6][0x9][0x91][0xf6]3[0x9a]#[0x91][0xf2][0xa5]JS?ni[0x9b][0x90][0x84][0x9a][0xfa][0x9][0xae]DB[0xa4][0xb1]G[0xe2]K[0xfe][0x1b][0x16]W[0xf2][0xc1][0xeb][0x6][0x0][0x0]"
+2020-02-13 20:12:34 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: deny
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << ETag: W/"c674c79102971d02add783e93241a87d2665272995cb84ebb562227f7ea725ec"
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Cache-Control: max-age=300
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Geo-Block-List:
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Via: 1.1 varnish (Varnish/6.0)
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-GitHub-Request-Id: 13D2:29D1:51EC8:6A199:5E458FFF
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Content-Length: 694
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Accept-Ranges: bytes
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 13 Feb 2020 18:12:34 GMT
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Via: 1.1 varnish
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Served-By: cache-vie21649-VIE
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Cache: MISS
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Cache-Hits: 0
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Timer: S1581617555.769111,VS0,VE98
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Vary: Authorization,Accept-Encoding
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << X-Fastly-Request-ID: d6497bf6f8a0b89536bbc4a65b299531834794f2
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Expires: Thu, 13 Feb 2020 18:17:34 GMT
+2020-02-13 20:12:34 DEBUG headers:125 - http-outgoing-0 << Source-Age: 272
+2020-02-13 20:12:34 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2020-02-13 20:12:34 DEBUG PoolingHttpClientConnectionManager:342 - Connection [id: 0][route: {s}->https://raw.githubusercontent.com:443] can be kept alive indefinitely
+2020-02-13 20:12:34 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2020-02-13 20:12:34 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-02-13 20:12:38 DEBUG Main:36 - Driver created
+2020-02-13 20:17:25 DEBUG Main:34 - 
+2020-02-13 20:17:25 DEBUG Main:35 - Start
+2020-02-13 20:17:25 DEBUG Main:24 - Try to create driver
+2020-02-13 20:17:30 DEBUG Main:36 - Driver created
+2020-02-13 20:17:33 DEBUG Main:52 - 0 proxies has been finded
+2020-02-13 20:21:33 DEBUG Main:35 - 
+2020-02-13 20:21:33 DEBUG Main:36 - Start
+2020-02-13 20:21:33 DEBUG Main:24 - Try to create driver
+2020-02-13 20:21:38 DEBUG Main:36 - Driver created
+2020-02-13 20:21:45 DEBUG Main:57 - 0 proxies has been finded
+2020-02-13 20:21:52 DEBUG Main:57 - 6750 proxies has been finded
+2020-02-13 20:27:39 DEBUG Main:66 - Search button pressed
+2020-02-13 20:28:05 DEBUG Main:35 - 
+2020-02-13 20:28:05 DEBUG Main:36 - Start
+2020-02-13 20:28:05 DEBUG Main:24 - Try to create driver
+2020-02-13 20:28:09 DEBUG Main:36 - Driver created
+2020-02-13 20:28:16 DEBUG Main:57 - 0 proxies has been finded
+2020-02-13 20:28:24 DEBUG Main:57 - 6750 proxies has been finded
+2020-02-13 20:28:25 DEBUG Main:68 - Search button pressed
+2020-02-13 20:29:38 DEBUG Main:35 - 
+2020-02-13 20:29:38 DEBUG Main:36 - Start
+2020-02-13 20:29:38 DEBUG Main:24 - Try to create driver
+2020-02-13 20:29:42 DEBUG Main:36 - Driver created
+2020-02-13 20:29:49 DEBUG Main:57 - 0 proxies has been finded
+2020-02-13 20:29:57 DEBUG Main:57 - 6750 proxies has been finded
+2020-02-13 20:29:57 DEBUG Main:68 - Search button pressed
+2020-02-13 20:30:09 DEBUG Main:35 - 
+2020-02-13 20:30:09 DEBUG Main:36 - Start
+2020-02-13 20:30:09 DEBUG Main:24 - Try to create driver
+2020-02-13 20:30:14 DEBUG Main:36 - Driver created
+2020-02-13 20:30:20 DEBUG Main:57 - 0 proxies has been finded
+2020-02-13 20:30:29 DEBUG Main:57 - 6750 proxies has been finded
+2020-02-13 20:30:30 DEBUG Main:68 - Search button pressed
+2020-02-13 20:44:54 DEBUG Main:33 - 
+2020-02-13 20:44:54 DEBUG Main:34 - Start
+2020-02-13 20:44:54 DEBUG Main:24 - Try to create driver
+2020-02-13 20:44:59 DEBUG Main:36 - Driver created
+2020-02-13 20:45:05 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 20:45:14 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 20:47:57 DEBUG Main:33 - 
+2020-02-13 20:47:57 DEBUG Main:34 - Start
+2020-02-13 20:47:57 DEBUG Main:24 - Try to create driver
+2020-02-13 20:48:01 DEBUG Main:36 - Driver created
+2020-02-13 20:48:08 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 20:48:16 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 20:49:30 DEBUG Main:33 - 
+2020-02-13 20:49:30 DEBUG Main:34 - Start
+2020-02-13 20:49:30 DEBUG Main:24 - Try to create driver
+2020-02-13 20:49:34 DEBUG Main:36 - Driver created
+2020-02-13 20:49:41 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 20:49:48 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 20:57:18 DEBUG Main:33 - 
+2020-02-13 20:57:18 DEBUG Main:34 - Start
+2020-02-13 20:57:18 DEBUG Main:24 - Try to create driver
+2020-02-13 20:57:23 DEBUG Main:36 - Driver created
+2020-02-13 20:57:29 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 20:57:38 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:06:01 DEBUG Main:33 - 
+2020-02-13 21:06:01 DEBUG Main:34 - Start
+2020-02-13 21:06:01 DEBUG Main:24 - Try to create driver
+2020-02-13 21:06:06 DEBUG Main:36 - Driver created
+2020-02-13 21:06:13 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:06:22 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:10:47 DEBUG Main:33 - 
+2020-02-13 21:10:47 DEBUG Main:34 - Start
+2020-02-13 21:10:47 DEBUG Main:24 - Try to create driver
+2020-02-13 21:10:51 DEBUG Main:36 - Driver created
+2020-02-13 21:10:58 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:11:06 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:12:11 DEBUG Main:33 - 
+2020-02-13 21:12:11 DEBUG Main:34 - Start
+2020-02-13 21:12:11 DEBUG Main:24 - Try to create driver
+2020-02-13 21:12:15 DEBUG Main:36 - Driver created
+2020-02-13 21:12:22 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:12:30 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:13:01 DEBUG Main:33 - 
+2020-02-13 21:13:01 DEBUG Main:34 - Start
+2020-02-13 21:13:01 DEBUG Main:24 - Try to create driver
+2020-02-13 21:13:06 DEBUG Main:36 - Driver created
+2020-02-13 21:13:14 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:13:22 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:15:50 DEBUG Main:33 - 
+2020-02-13 21:15:50 DEBUG Main:34 - Start
+2020-02-13 21:15:50 DEBUG Main:24 - Try to create driver
+2020-02-13 21:15:54 DEBUG Main:36 - Driver created
+2020-02-13 21:16:01 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:16:08 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:16:38 DEBUG Main:33 - 
+2020-02-13 21:16:38 DEBUG Main:34 - Start
+2020-02-13 21:16:38 DEBUG Main:24 - Try to create driver
+2020-02-13 21:16:43 DEBUG Main:36 - Driver created
+2020-02-13 21:16:49 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:16:57 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:21:04 DEBUG Main:33 - 
+2020-02-13 21:21:04 DEBUG Main:34 - Start
+2020-02-13 21:21:04 DEBUG Main:24 - Try to create driver
+2020-02-13 21:21:08 DEBUG Main:36 - Driver created
+2020-02-13 21:21:15 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:21:23 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:25:33 DEBUG Main:33 - 
+2020-02-13 21:25:33 DEBUG Main:34 - Start
+2020-02-13 21:25:33 DEBUG Main:24 - Try to create driver
+2020-02-13 21:25:37 DEBUG Main:36 - Driver created
+2020-02-13 21:25:41 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:25:49 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:30:20 DEBUG Main:33 - 
+2020-02-13 21:30:20 DEBUG Main:34 - Start
+2020-02-13 21:30:20 DEBUG Main:24 - Try to create driver
+2020-02-13 21:30:24 DEBUG Main:36 - Driver created
+2020-02-13 21:30:28 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:30:36 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:31:49 DEBUG Main:33 - 
+2020-02-13 21:31:49 DEBUG Main:34 - Start
+2020-02-13 21:31:49 DEBUG Main:24 - Try to create driver
+2020-02-13 21:31:53 DEBUG Main:36 - Driver created
+2020-02-13 21:31:57 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:32:04 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:32:47 DEBUG Main:33 - 
+2020-02-13 21:32:47 DEBUG Main:34 - Start
+2020-02-13 21:32:47 DEBUG Main:24 - Try to create driver
+2020-02-13 21:32:51 DEBUG Main:36 - Driver created
+2020-02-13 21:32:55 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:33:03 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:37:55 DEBUG Main:33 - 
+2020-02-13 21:37:55 DEBUG Main:34 - Start
+2020-02-13 21:37:55 DEBUG Main:24 - Try to create driver
+2020-02-13 21:38:00 DEBUG Main:36 - Driver created
+2020-02-13 21:38:05 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:38:14 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:40:17 DEBUG Main:33 - 
+2020-02-13 21:40:17 DEBUG Main:34 - Start
+2020-02-13 21:40:17 DEBUG Main:24 - Try to create driver
+2020-02-13 21:40:24 DEBUG Main:36 - Driver created
+2020-02-13 21:40:28 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:40:38 DEBUG Main:54 - 6750 proxies has been finded
+2020-02-13 21:42:36 DEBUG Main:33 - 
+2020-02-13 21:42:36 DEBUG Main:34 - Start
+2020-02-13 21:42:36 DEBUG Main:24 - Try to create driver
+2020-02-13 21:42:40 DEBUG Main:36 - Driver created
+2020-02-13 21:42:43 DEBUG Main:54 - 0 proxies has been finded
+2020-02-13 21:42:52 DEBUG Main:54 - 6750 proxies has been finded
