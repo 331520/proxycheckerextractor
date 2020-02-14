@@ -65,12 +65,18 @@ public class Main {
         
         
         try {
-        Document doc = Jsoup.parse(resultTable);  
+        //Document doc = Jsoup.parse(resultTable);  
+        Document doc = Jsoup.connect("https://checkerproxy.net/archive/2020-02-11").get();
         Elements content = doc.body().getElementsByTag("body");
-        Element table = doc.select("thead").first(); //select the first table.
+        Element table = doc.select("tbody").get(1); //select the first table.
         Element table1 = doc.body().getElementsByTag("tr").first(); //select the first table.
         Elements rows = table.select("tr");
+            for (Element row : rows) {
+                System.out.println("" + row.text());
+            }
 
+        System.out.println("stop");
+        
         } catch (Exception e) {
             System.out.println("error get jsoup document : " + e.getLocalizedMessage());
         }
