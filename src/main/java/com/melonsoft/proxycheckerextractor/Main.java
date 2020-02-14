@@ -6,7 +6,8 @@
 package com.melonsoft.proxycheckerextractor;
 
 import java.io.IOException;
-import java.util.ArrayList; 
+import java.util.ArrayList;
+import java.util.Iterator;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -42,7 +43,7 @@ public class Main {
         WebDriver driver = newWebDriver.driver();
         WebDriverWait wait = new WebDriverWait(driver, webdriverwait);
 
-        driver.get("https://checkerproxy.net/archive/2020-02-11");
+        driver.get("https://checkerproxy.net/archive/2020-02-14");
 
         //are list loaded to applet?
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")));
@@ -60,27 +61,32 @@ public class Main {
             }
         }
 
-        String resultTable = "<!DOCTYPE html><html><head><title>First parse</title></head><body>" + driver.findElement(By.id("resultTable")).getAttribute("innerHTML")+ "</body></html>";
+        String resultTable = driver.getPageSource();
         //String resultTable = driver.findElement(By.id("resultTable")).getAttribute("innerHTML");
-        
-        
+
         try {
-        //Document doc = Jsoup.parse(resultTable);  
-        Document doc = Jsoup.connect("https://checkerproxy.net/archive/2020-02-11").get();
-        Elements content = doc.body().getElementsByTag("body");
-        Element table = doc.select("tbody").get(1); //select the first table.
-        Element table1 = doc.body().getElementsByTag("tr").first(); //select the first table.
-        Elements rows = table.select("tr");
-            for (Element row : rows) {
-                System.out.println("" + row.text());
+            //Document doc = Jsoup.parse(resultTable);  
+            Document doc = Jsoup.parse(resultTable);
+            Element table = doc.select("table[id=resultTable]").first();
+            Elements rows = table.select("tr");
+
+            for (int i = 1; i < rows.size(); i++) { //first row is the col names so skip it.
+                Element row = rows.get(i);
+                Elements cols = row.select("td");
+                System.out.println("");
+                System.out.println("");
+
+                for (Element col : cols) {
+                    System.out.println("" + col.text());
+                }
+
             }
 
-        System.out.println("stop");
-        
+            System.out.println("stop");
+
         } catch (Exception e) {
             System.out.println("error get jsoup document : " + e.getLocalizedMessage());
         }
-        
 
         driver.close();
         driver.quit();
