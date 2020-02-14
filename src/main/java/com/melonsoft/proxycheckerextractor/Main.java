@@ -7,6 +7,7 @@ package com.melonsoft.proxycheckerextractor;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
@@ -34,6 +35,8 @@ public class Main {
         logger.debug("");
         logger.debug("Start");
         Integer webdriverwait = 10;
+        HashMap<String, String> proxyHM = new HashMap<String, String>();
+        
 
         //classes
         SupportFactory sf = new SupportFactory();
@@ -75,11 +78,18 @@ public class Main {
                 Elements cols = row.select("td");
                 System.out.println("");
                 System.out.println("");
-
-                for (Element col : cols) {
-                    System.out.println("" + col.text());
-                }
-
+                /*
+                System.out.println("" + cols.get(0).text());
+                System.out.println("" + cols.get(1).text());
+                System.out.println("" + cols.get(2).text());
+                System.out.println("" + cols.get(3).text());
+                */
+                
+                proxyHM.put("ip", cols.get(0).text());
+                proxyHM.put("country", cols.get(1).text());
+                proxyHM.put("type", cols.get(2).text());
+                proxyHM.put("ip_source", "https://checkerproxy.net");
+                sf.CreateProfile(proxyHM);
             }
 
             System.out.println("stop");
