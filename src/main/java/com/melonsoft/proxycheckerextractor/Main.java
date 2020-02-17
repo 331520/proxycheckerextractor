@@ -6,9 +6,9 @@
 package com.melonsoft.proxycheckerextractor;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
-import java.util.Iterator;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -36,7 +36,6 @@ public class Main {
         logger.debug("Start");
         Integer webdriverwait = 10;
         HashMap<String, String> proxyHM = new HashMap<String, String>();
-        
 
         //classes
         SupportFactory sf = new SupportFactory();
@@ -46,7 +45,11 @@ public class Main {
         WebDriver driver = newWebDriver.driver();
         WebDriverWait wait = new WebDriverWait(driver, webdriverwait);
 
-        driver.get("https://checkerproxy.net/archive/2020-02-14");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(dtf.format(now));
+
+        driver.get("https://checkerproxy.net/archive/"+dtf.format(now));
 
         //are list loaded to applet?
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")));
@@ -83,8 +86,8 @@ public class Main {
                 System.out.println("" + cols.get(1).text());
                 System.out.println("" + cols.get(2).text());
                 System.out.println("" + cols.get(3).text());
-                */
-                
+                 */
+
                 proxyHM.put("ip", cols.get(0).text());
                 proxyHM.put("country", cols.get(1).text());
                 proxyHM.put("type", cols.get(2).text());

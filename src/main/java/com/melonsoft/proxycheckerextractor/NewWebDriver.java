@@ -19,6 +19,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 class NewWebDriver {
 
     final static Logger logger = Logger.getLogger(Main.class);
+
     public WebDriver driver() {
         //create new Crome driver
         logger.debug("Try to create driver");
@@ -30,6 +31,13 @@ class NewWebDriver {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36");
+
+            if (!System.getProperty("os.name").contains("Wind")) {
+                options.addArguments("--headless");
+            } else {
+                System.out.println("This is Windows. Run in visible mode");
+            }
+
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             driver = new ChromeDriver(capabilities);
@@ -40,4 +48,3 @@ class NewWebDriver {
         return (ChromeDriver) driver;
     }
 }
-
