@@ -54,7 +54,7 @@ public class Main {
         //are list loaded to applet?
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")));
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             try {
                 String proxyCounter = driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/div/div[1]/div[2]/div/p/span[1]")).getText();
                 Thread.sleep(2000);
